@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@1,400;1,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custheading {
+  font-family: "Tomorrow", sans-serif;
+}
+.primary-button {
+  @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400  active:bg-amber-500;
+}
+.default-button {
+  @apply rounded bg-gray-100 py-2  px-4 text-black shadow outline-none hover:bg-gray-200  active:bg-gray-300;
+}
+
+input,
+select,
+textarea {
+  @apply rounded border p-2  outline-none ring-indigo-300  focus:ring;
+}
+
+.dropdown-link {
+  @apply flex p-2 hover:bg-gray-200;
+}
+
+.alert-error {
+  @apply my-3 rounded-lg bg-red-100 p-3 text-red-700;
+}
+
+.alert-success {
+  @apply my-3 rounded-lg bg-green-100 p-3 text-green-700;
+}
+
+* > * {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.input-text {
+  @apply mt-1 block w-60 px-3 py-2 bg-white border border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-500;
+  @apply focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500;
+}
+
+.loader {
+  @apply border-gray-200 rounded-full border-4 ease-linear h-10 w-10;
+  border-top-color: #363ce0;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: 0;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+  width: 40%;
+  height: 35%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  bottom: 10rem;
+  border-radius: 100%;
+} */
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: 0;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #626581 0%, #1a1531 100%);
+  filter: blur(900px);
+  width: 40%;
+  height: 35%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.white__gradient {
+  background: rgba(41, 5, 170, 0.6);
+  filter: blur(750px);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  bottom: 10rem;
+  border-radius: 100%;
+}
+
+/* nft images top slider */
+.tabtext {
+  border: none;
+}
+.tabwidth {
+  /* border: none; */
+}
+@media (max-width: 950px) and (min-width: 600px) {
+  .tabtext {
+    font-size: 1.3rem !important;
+  }
+  .tabwidth {
+    width: 100% !important;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  height: 10rem;
+  /* background-color: orange; */
+  width: 100%;
+}
